@@ -7,10 +7,7 @@ import {
   DynamicModuleOptions,
 } from './interfaces';
 
-@Module({
-  providers: [MultiDynamicClientService],
-  exports: [MultiDynamicClientService],
-})
+@Module({})
 export class MultiDynamicClientModule {
   static registerAsync(
     ...options: DynamicClientModuleAsyncOptions[]
